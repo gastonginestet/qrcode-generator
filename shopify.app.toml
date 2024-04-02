@@ -1,0 +1,29 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "4608dbc22a2cdd9f340f9504864a472c"
+name = "qrcode-generator"
+handle = "qrcode-generator-4"
+application_url = "https://neutral-earl-americas-answers.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "cool-aesthetic-clothing.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://neutral-earl-americas-answers.trycloudflare.com/auth/callback",
+  "https://neutral-earl-americas-answers.trycloudflare.com/auth/shopify/callback",
+  "https://neutral-earl-americas-answers.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-04"
+
+[pos]
+embedded = false
